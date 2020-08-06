@@ -9,6 +9,6 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
-    <artifactId>bfs-demo_common</artifactId>
+    <artifactId>bfs-demo-common</artifactId>
 
 </project>

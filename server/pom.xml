@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>com.bytes.bfs.demo</groupId>
-            <artifactId>bfs-demo_common</artifactId>
+            <artifactId>bfs-demo-common</artifactId>
         </dependency>
 
         <dependency>
@@ -88,13 +88,23 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <executable>true</executable>
-                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
+
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>

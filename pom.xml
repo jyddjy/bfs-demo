@@ -20,7 +20,7 @@
 
             <dependency>
                 <groupId>com.bytes.bfs.demo</groupId>
-                <artifactId>bfs-demo_common</artifactId>
+                <artifactId>bfs-demo-common</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
 
