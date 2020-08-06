@@ -3,6 +3,7 @@ package com.bytes.bfs.demo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -17,7 +18,8 @@ import org.springframework.context.annotation.Configuration;
 @NoArgsConstructor
 @Data
 @Configuration
-public class Config implements InitializingBean, ApplicationListener {
+@Slf4j
+public class Config implements InitializingBean {
 
     @Value("${ns.name:}")
     private String name;
@@ -26,11 +28,6 @@ public class Config implements InitializingBean, ApplicationListener {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println(getName() + "  " + getAge());
-    }
-
-    @Override
-    public void onApplicationEvent(ApplicationEvent applicationEvent) {
-        System.out.println(getName() + "  " + getAge());
+        log.info("配置信息 ：{}",this);
     }
 }
