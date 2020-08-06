@@ -12,6 +12,6 @@ public class DemoController {
 
     @RequestMapping("/date")
     public String getDate( ){
-        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss:sss"));
+        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
 }
