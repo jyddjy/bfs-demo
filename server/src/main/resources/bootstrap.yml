@@ -20,3 +20,14 @@ spring:
         server-addr: jyddjy.vcmps.com:80
         register-enabled: true
         heart-beat-interval: 3000
+
+#rancher dns访问
+---
+spring:
+  profiles: prod
+  cloud:
+    nacos:
+      config:
+        server-addr: nacosdns:8848
+      discovery:
+        server-addr: nacosdns:8848
