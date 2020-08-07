@@ -19,6 +19,4 @@ spring:
         group: BFS
         server-addr: jyddjy.vcmps.com:80
         register-enabled: true
-        heart-beat-interval: 10000
-        heart-beat-timeout: 5000
-        ip-delete-timeout: 10000
+        heart-beat-interval: 3000
