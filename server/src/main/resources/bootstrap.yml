@@ -8,15 +8,14 @@ spring:
         file-extension: yaml
         prefix: demo_cloud_config
         server-addr: jyddjy.vcmps.com:80
-        #        username: "nacos"
-        #        password: "*a2881076"
-        #        context-path: /nacos
         encode: UTF-8
         group: BFS
 
       discovery:
         namespace: a8abe9bb-a82f-4531-8284-97e2527e11a8
         server-addr: jyddjy.vcmps.com:80
+        watch-delay: 5000
+        cluster-name: BFS
 
 
 
