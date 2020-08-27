@@ -1,3 +1,22 @@
 spring:
   profiles:
     active: local
+
+bfs:
+  server:
+    bfs-demo:
+      url: 127.0.0.1:9090
+    bfs-demo2:
+      url: 127.0.0.1:8080
+
+support:
+  box:
+    open-ignore: false
+    private-key: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANDt+0BwZVO1k2WBoKXVH3C1t5nE44IvB5fRCSdJz8++yHHiRyh2Vh/k7N5XQYzxPZIVS5SiSjmCBONOUNpX3CKQB0K88znp2zf8FaZ1n3LHNiFzTbXoTPMUopOy1yFvH1Q4bZ48CZVrz8XroZHLSy7Yby7b3LC2BIS6VPJmA6Q/AgMBAAECgYARJaGb8Eg1+TkCTlk47aeJleBeUQ0QVNEdYfKLtEBx9F55ukXMyamChJn2xYKDvBN+4cXfilI9K1vrVoocNrRs8RkouXK88uH+caTGzEKgAmXH6157vIzWyQzOIhttkn9SQ8dzc2pPhySdzmMv+LLBmzPg1vRnmsJTImiUacLugQJBAO9qRubAK0W3RSlUZmfiC9GlXYszuS0FBX0++X0bBAdmia1oCbVEE039SJkj6o0jY0kY5KVxx+DPIMYQIIMWUWkCQQDfZxUYy5DZPmlyxq/SZmKIIz+6GusScsutTW4X1YOs6jDSJJXpv+kbd6HcBq3pXoPyVBEXEoOW7ORMz1jRsmtnAkEAmAZlNTtLfv5sJV1ZlZd9J8eYyb6zVDn/DVPCusU/3q8mt3z7xSWQGJK/2bZrxul0r0LmVYQVhtQfnIU7D+JJGQJAb/qpln4jIuGn1YJGCz6K0RZqEQ0BG4QzF7EiKAw8LmZNBmiURFCPtdbnaPRoI/veQ49j6Z68GuCvJtkf+ixmrQJBAKUwvDi+JJn6IYE4JM7hBBnvueA4yZBb4Kh1UGFtuSr1/O7KrAW8cBK9S67ZcaemrL7DPGV4uSTcCj4A3xge5Zo=
+    public-keys:
+      bfs-demo2:
+        - profile: local
+          publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQ7ftAcGVTtZNlgaCl1R9wtbeZxOOCLweX0QknSc/Pvshx4kcodlYf5OzeV0GM8T2SFUuUoko5ggTjTlDaV9wikAdCvPM56ds3/BWmdZ9yxzYhc0216EzzFKKTstchbx9UOG2ePAmVa8/F66GRy0su2G8u29ywtgSEulTyZgOkPwIDAQAB
+      bfs-demo:
+        - profile: local
+          publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQ7ftAcGVTtZNlgaCl1R9wtbeZxOOCLweX0QknSc/Pvshx4kcodlYf5OzeV0GM8T2SFUuUoko5ggTjTlDaV9wikAdCvPM56ds3/BWmdZ9yxzYhc0216EzzFKKTstchbx9UOG2ePAmVa8/F66GRy0su2G8u29ywtgSEulTyZgOkPwIDAQAB

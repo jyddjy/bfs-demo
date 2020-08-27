@@ -1,6 +1,6 @@
 spring:
   application:
-    name: bfs-demo
+    name: bfs-demo2
   cloud:
     nacos:
       config:
@@ -10,11 +10,16 @@ spring:
         server-addr: jyddjy.vcmps.com:80
         encode: UTF-8
         group: BFS
+        extension-configs:
+          - data-id: shared.yaml
+            group: BFS
+            refresh: true
 
       discovery:
         namespace: a8abe9bb-a82f-4531-8284-97e2527e11a8
         server-addr: jyddjy.vcmps.com:80
         watch-delay: 5000
+        group: BFS
         cluster-name: BFS
 
 
