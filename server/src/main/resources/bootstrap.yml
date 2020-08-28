@@ -1,6 +1,6 @@
 spring:
   application:
-    name: bfs-demo2
+    name: bfs-demo
   cloud:
     nacos:
       config:
