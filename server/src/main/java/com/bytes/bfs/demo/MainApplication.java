@@ -11,8 +11,8 @@ import org.springframework.context.annotation.ComponentScan;
 @Slf4j
 @ComponentScan(value = {"com.bytes.bfs"})
 @SpringCloudApplication
-@EnableFeignClients(basePackages = {"com.bytes.bfs"})
-@EnableBox(encrypt = true)
+@EnableFeignClients(value = {"com.bytes.bfs"})
+@EnableBox(encrypt = true,feignEncrypt = true)
 public class MainApplication {
 
     public static void main(String[] args) {
