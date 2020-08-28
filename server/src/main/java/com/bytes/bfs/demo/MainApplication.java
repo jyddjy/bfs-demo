@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(value = {"com.bytes.bfs"})
 @SpringCloudApplication
 @EnableFeignClients(basePackages = {"com.bytes.bfs"})
-@EnableBox(encrypt = true,feignEncrypt = true)
+@EnableBox(encrypt = true)
 public class MainApplication {
 
     public static void main(String[] args) {
